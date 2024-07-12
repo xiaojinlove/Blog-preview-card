@@ -56,7 +56,10 @@ body {
   margin-bottom: 12px;
   font-weight: 800;
   font-size: 24px;
-
+}
+.title:hover {
+  color: #f3cf4d;
+  cursor: pointer;
 }
 .description {
   color: #7f7f7f;
