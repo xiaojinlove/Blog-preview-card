@@ -6,7 +6,7 @@
 body {
   height: 100vh;
   background-color: #f3cf4d;
-  font: 'Figtree', sans-serif;
+  font: 'Figtree', 'sans-serif';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,20 @@ body {
   width: 384px;
   border-radius: 20px;
   padding: 24px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border: 1px solid #111;
+}
+.card::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  border-radius: 20px;
+  z-index: -1;
 }
 .card-image {
   width: 100%;
